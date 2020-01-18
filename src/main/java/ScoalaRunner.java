@@ -7,7 +7,7 @@ public class ScoalaRunner {
         String user = "root";
         String pass = "root";
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
 
             Connection conn = DriverManager.getConnection(url, user, pass);
             Statement stmt = conn.createStatement();
